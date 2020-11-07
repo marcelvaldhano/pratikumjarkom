@@ -13,6 +13,14 @@ clientSocket.sendto(name.encode(),(serverName, serverPort))
 print('Connection accepted to localhost')
 print('Hello Welcome to the groupchat.')
 
+
+# while(True):
+#     join, serverAddress = clientSocket.recvfrom(2048)
+#     print(join.decode())
+#     message=input()
+#     join, serverAddress = clientSocket.recvfrom(2048)
+#     print(join.decode())
+#     clientSocket.sendto(message.encode,(serverName,serverPort))
 def receive():
     while True:
         try:
